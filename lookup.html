@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <header>
+            <nav class="navbar">
+              <div class="logo">
+                <img src="SalishSalmon.jpg" alt="Moffat Bay Lodge Logo" class="logo-image">
+              </div>
+              <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="lookup.html">Look Up Your Reservation</a></li>
+              </ul>
+              <button class="book-now-btn" onclick="location.href='registration.html'">Book Now</button>
+            </nav>
+          </header>
+
+    <main>
+        <section class="hero">
+            <h1>Look Up Your Reservation</h1>
+        </section>
+        <section class="lookup-form-container">
+            <form method="POST" class="lookup-form">
+                <label for="reservation_id">Reservation ID:</label>
+                <input type="text" id="reservation_id" name="reservation_id">
+    
+                <label for="email">Email (Optional):</label>
+                <input type="email" id="email" name="email">
+    
+                <button type="submit">Find Reservation</button>
+            </form>
+        </section>
+            
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Moffat Bay Lodge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

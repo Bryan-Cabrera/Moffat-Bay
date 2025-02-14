@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moffat Bay Lodge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="index-page">
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="SalishSalmon.jpg" alt="Moffat Bay Lodge Logo" class="logo-image">
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#attractions">Attractions</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="reservation.html">Reservations</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="lookup.html">Look Up Your Reservation</a></li>
+      </ul>
+      <button class="book-now-btn" onclick="location.href='registration.html'">Book Now</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="hero-image.jpg" alt="Scenic view of Moffat Bay" class="hero-image">
+    </section>
+
+    <section class="about" id="about">
+      <h1>About Us</h1>
+      <p>
+        Our family started this hotel business in 1981, and since then, each generation has kept it thriving.  
+        Our main goal is to provide a tranquil nature experience and a relaxing getaway.  
+        Customer service is our top priority, and we are known for our hospitality.  
+        Nothing brings us more joy than our guests making unforgettable memories.
+      </p>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel" id="attractions">
+      <h2>Attractions</h2>
+      <div class="carousel-wrapper">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="hiking.jpg" alt="Hiking">
+            <p>Hiking</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="kayaking.jpg" alt="Kayaking">
+            <p>Kayaking</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="diving.jpg" alt="Diving">
+            <p>Diving</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="surfing.jpg" alt="Surfing">
+            <p>Surfing</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="whale-watching.jpg" alt="Whale Watching">
+            <p>Whale Watching</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="nature-trails.jpg" alt="Nature Trails">
+            <p>Nature Trails</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Moffat Bay Lodge. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const carouselContainer = document.querySelector(".carousel-container");
+      const slides = document.querySelectorAll(".carousel-slide");
+      let index = 0;
+
+      setInterval(() => {
+        index = (index + 1) % slides.length;
+        carouselContainer.style.transform = `translateX(-${index * 100}%)`;
+      }, 5000);
+    });
+  </script>
+</body>
+</html>
